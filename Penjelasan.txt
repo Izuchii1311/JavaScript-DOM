@@ -1,0 +1,153 @@
+#1 JavaScript DOM Pendahuluan
+
+DOM (Document Object Model), antarmuka pemrograman untuk HTML yang mempresentasikan halaman web, sehingga program dapat mengubah dan memanipulasi strukturnya.
+
+Document itu adalah area putih di dalam browser.
+window
+    --> document --> ...
+    --> history 
+    --> location 
+
+Pembelajaran :
+> DOM Selection, mengakses sebuah element di dalam document menggunakan JavaScript.
+> DOM Manipulation, manipulasi element html dengan DOM.
+> DOM Traversal, menelusuri element html lewat html yg lain.
+> Event Handling, perubahan ketika ada Trigger.
+
+
+
+
+#2 JavaScript DOM - DOM Tree
+
+DOM Tree, adalah representasi element element HTML di dalam browser.
+
+Memilih lebih dari 1 Node disebut NodeList.
+HTMLCollection, kumpulan node yang khusus yang tipenya element html saja.   
+
+NodeList vs. HTMLCollection
+> Keduanya merupakan kumpulan node.
+> Struktur datanya mirip Array.
+> nodeList dapat berisi node apapun, sedangkan HTMLCollection harus berisi HTML.
+> HTMLCollection bersifat live sedangkan NodeList tidak.
+
+
+
+
+#3 DOM Selection
+
+DOM Selection Method
+> getElementById()          = memilih element berdasarkan id.
+> getElementsByTagName()    = element element dengan tag tertentu.
+> getElementsByClassName()  = mencari element dengan nama class tertentu (boleh dimiliki lebih dari 1 element).
+> querySelector()           = digunakan untuk mencari element berdasarkan selectornya.        
+> querySelectorAll()
+
+
+DOM Selection Method
+    Method                      Hasil
+getElementById                 element
+getElementsByTagName        HTMLCollection
+getElementsByClassName      HTMLCollection
+querySelector                  element 
+querySelectorAll              Node List
+
+
+
+
+#4 DOM Selection Part 2
+
+Mengubah Node Root
+
+
+
+
+
+#5 DOM Manipulation Part 1
+
+> Manipulasi Element
+    element.innerHTML
+    element.style.<property>
+    element.setAttribute()
+    element.classList
+
+> Manipulasi Node 
+
+
+
+
+
+
+
+#6 DOM Manipulation Part 2
+
+> Manipulasi Element
+    element.innerHTML
+    element.style.<property>
+    element.setAttribute()
+    element.classList
+
+> Manipulasi Node 
+    document.createElement()        >> membuat element kosong
+    document.createTextNode()       >> menambahkan text 
+    node.appendChild()              >> simpan ke akhir dari sebuah element parent
+    node.insertBefore()
+    parentNode.removeChild()
+    parentNode.replaceChild()
+    ...
+
+
+
+
+
+#7 DOM Events
+
+Events != Even
+
+Events, pada js merepresentasikan sebuah kejadian yang terjadi di dalam DOM.
+
+Kejadian tersebut bisa dilakukan oleh user (mouse event, keyboard event, dll)
+atapun dilakukan secara otomatis oleh API.
+
+cara mendengarkan Event -- apakah ada kegiatan yang dilakukan oleh user atau tidak.
+> Event Handler     
+    Inline HTML attribute
+    Element method
+> addEventListener()
+
+
+Event Handler
+    on<event>
+    onclick
+
+Perbedaan Event Handler dengan addEventListener??
+jika kita memberikan lebih dari 1 perubahan pada sebuah event.
+jika event Handler perubahannya akan menimpa perubahan sebelumnya.
+
+sedangkan menggunakan addEventListener akan menambah perubahannya
+
+
+
+
+
+#8 DOM Bermain dengan Warna - Latihan DOM 1
+
+
+
+
+
+#9 DOM Membuat Game Suwit Jawa
+
+
+
+
+#10 DOM Traversal / Penelusuran DOM
+
+Menyelesi Elementnya, lalu menelusuri element lain dari element yang sudah diseleksi tadi.
+
+DOM Traversal Method
+> parentNode                        node
+> parentElement                     element
+> nextSibling                       node
+> nextElementSibling                element
+> previousSibling                   node 
+> previousElementSibling            element
