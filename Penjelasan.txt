@@ -151,3 +151,24 @@ DOM Traversal Method
 > nextElementSibling                element
 > previousSibling                   node 
 > previousElementSibling            element
+
+
+
+
+
+#11 DOM Prevent Default
+
+
+
+
+#12 DOM Event Bubbling  
+
+
+
+
+#13 DOM Membuat Image Gallery
+
+
+
+
+Tahapan Belajar Selanjutnya 
